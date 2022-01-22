@@ -1,0 +1,8 @@
+#my.message: 스프링 부트 2.1
+#---
+#spring.profiles.active: local
+#my.message: 스프링 부트 2.2
+#---
+#spring.profiles.active: prod
+#spring.profiles.include: local
+#my.message: 스프링 부트 2.3
