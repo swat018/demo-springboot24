@@ -28,7 +28,9 @@ public class DemoSpringboot24Application {
 
     @Bean
     public ApplicationRunner applicationRunner() {
-        return args -> System.out.println(myMessage + " " + Arrays.toString(environment.getActiveProfiles()));
+        return args -> System.out.println(myMessage +
+                " " + Arrays.toString(environment.getActiveProfiles()) +
+                " " + Arrays.toString(environment.getDefaultProfiles()));
     }
 
 }
