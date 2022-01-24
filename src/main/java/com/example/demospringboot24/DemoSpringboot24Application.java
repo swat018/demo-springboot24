@@ -14,23 +14,26 @@ import java.util.Arrays;
 @SpringBootApplication
 public class DemoSpringboot24Application {
 
-    @Value("${my.message}")
-    private String myMessage;
-
-    @Autowired
-    private Environment environment;
+//    @Value("${my.message}")
+//    private String myMessage;
+//
+//    @Autowired
+//    private Environment environment;
 
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(DemoSpringboot24Application.class);
-        app.setWebApplicationType((WebApplicationType.NONE));
-        app.run(args);
+//        SpringApplication app = new SpringApplication(DemoSpringboot24Application.class);
+//        app.setWebApplicationType((WebApplicationType.NONE));
+//        app.run(args);
+
+        SpringApplication.run(DemoSpringboot24Application.class, args);
+
     }
 
-    @Bean
-    public ApplicationRunner applicationRunner() {
-        return args -> System.out.println(myMessage +
-                " " + Arrays.toString(environment.getActiveProfiles()) +
-                " " + Arrays.toString(environment.getDefaultProfiles()));
-    }
+//    @Bean
+//    public ApplicationRunner applicationRunner() {
+//        return args -> System.out.println(myMessage +
+//                " " + Arrays.toString(environment.getActiveProfiles()) +
+//                " " + Arrays.toString(environment.getDefaultProfiles()));
+//    }
 
 }
